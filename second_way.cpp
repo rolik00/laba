@@ -10,7 +10,7 @@ int main()
         m = pow(2, k);
         std::cout << m << "\n";
         for (int i = 0; i < n; i++) for (int j = 0; j < m; j++)
-            table[i][j] = ((n / m) * i + j + 1) * 2;
+            table[i][j] = ((n / m) * i + j) * 2;
         int i_2 = 0, j_2 = m - 1, f_2 = 0;
         while (i_2 >= 0 && i_2 < n && j_2 >= 0 && j_2 < m)
         {
