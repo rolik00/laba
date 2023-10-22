@@ -50,7 +50,7 @@ int main()
         m = pow(2, k);
         std::cout << m << "\n";
         for (int i = 0; i < n; i++) for (int j = 0; j < m; j++)
-            table[i][j] = ((n / m) * i + j + 1) * 2;
+            table[i][j] = ((n / m) * i + j) * 2;
         // FIRST WAY
         //auto start_1 = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count(); //с помощью этой функции считала время работы алгоритма
         std::cout << "First way:  ";
