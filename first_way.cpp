@@ -26,7 +26,7 @@ int main()
         m = pow(2, k);
         std::cout << m << "\n";
         for (int i = 0; i < n; i++) for (int j = 0; j < m; j++)
-            table[i][j] = ((n / m) * i + j + 1) * 2;
+            table[i][j] = ((n / m) * i + j) * 2;
         int i_1 = binary_search(target, n, m).first;
         int j_1 = binary_search(target, n, m).second;
         if (j_1 != -1 && i_1 != -1 && table[i_1][j_1] == target) std::cout << "YES" << std::endl;
